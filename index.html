@@ -1,68 +1,429 @@
 <!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jennifer Hudson</title>
-<meta name="description" content="Two-time GRAMMY® Award-winning recording artist, Academy Award-winning actress, Emmy Award-winning producer, and best-selling author, Jennifer Hudson is now the newest voice in daytime talk!">
-<meta name="author" content="Warner Bros Television">
-<meta property="og:title" content="Jennifer Hudson">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://jenniferhudsonshow.com">
-<meta property="og:description" content="Two-time GRAMMY® Award-winning recording artist, Academy Award-winning actress, Emmy Award-winning producer, and best-selling author, Jennifer Hudson is now the newest voice in daytime talk!">
-<meta property="og:image" content="assets/images/jennifer-hudson-1200x630-v2.jpg">
-<link rel="icon" href="favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-v2.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-v2.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16-v2.png">
-<link rel="manifest" href="/assets/site.webmanifest">
-<link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#00000">
-<link rel="shortcut icon" href="favicon.ico">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-config" content="/assets/browserconfig.xml">
-<meta name="theme-color" content="#000000">
-	
-<style>
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-body {
-	margin: 0;
-	padding: 0;
-	-moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1.1rem;
-	background: #000;
-}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jennifer Hudson</title>
+  <meta name="description" content="Two-time GRAMMY® Award-winning recording artist, Academy Award-winning actress, Emmy Award-winning producer, and best-selling author, Jennifer Hudson is now the newest voice in daytime talk!">
+  <meta name="author" content="Warner Bros Television">
+  <meta property="og:title" content="Jennifer Hudson">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jenniferhudsonshow.com">
+  <meta property="og:description" content="Two-time GRAMMY® Award-winning recording artist, Academy Award-winning actress, Emmy Award-winning producer, and best-selling author, Jennifer Hudson is now the newest voice in daytime talk!">
+  <meta property="og:image" content="assets/images/jennifer-hudson-1200x630-v3.jpg">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-v2.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-v2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16-v2.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#00000">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-config" content="/assets/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
 
-.header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-    height: 100%;
-	background-image: url(assets/images/jennifer-hudson-show-mobile-v2.jpg);
-    background-size: contain;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
-	
-@media (min-width: 992px) {
-	.header {
-		background-image: url(assets/images/jennifer-hudson-show-v2.jpg);
-	}
-}
-.hidden {
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	font-size: 0;
-}
-</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      background: #000;
+    }
+
+    :root {
+      --eme-button-background: #f600b8;
+      --eme-button-background-hover: #d5009e;
+      --eme-link-color: #f600b8;
+      --eme-label-color: #464a4e;
+      --eme-form-control-column: 10px;
+      --eme-valid-border-color: #198754;
+      --eme-valid-focus-box-shadow: #19875440;
+      --eme-invalid-color: #dc3545;
+      --eme-invalid-border-color: #dc3545;
+      --eme-invalid-focus-box-shadow: #dc354540;
+      --eme-alert-warning-color: #664d03;
+      --eme-alert-warning-background-color: #fff3cd;
+      --eme-alert-warning-border-color: #ffecb5;
+      --eme-alert-danger-color: #842029;
+      --eme-alert-danger-background-color: #f8d7da;
+      --eme-alert-danger-border-color: #f5c2c7;
+      --eme-text-danger-color: #dc3545;
+    }
+    #eme-solicit .invalid-feedback {
+      width: 100%;
+      margin-top: 0.25rem;
+      font-size: .875em;
+      color: var(--eme-invalid-color);
+    }
+    #eme-solicit .text-danger {
+      font-size: .875em;
+    }
+    #eme-solicit .alert {
+      position: relative;
+      padding: 0.5rem 0.825rem;
+      margin-bottom: 1rem;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+      font-size: .9rem;
+    }
+    #eme-solicit .alert-secondary {
+      padding: 0;
+      background: transparent;
+    }
+    #eme-solicit label,
+    #eme-solicit .input-group {
+      font-size: 0.9em;
+    }
+    #eme-solicit h1 {
+      display: none;
+    }
+    #eme-solicit .text-danger {
+      color: var(--eme-text-danger-color) !important;
+    }
+    #eme-solicit a {
+      color: var(--eme-link-color) !important;
+    }
+    #eme-solicit .solicit-description {
+      line-height: 1.4;
+      display: none;
+    }
+    #eme-solicit .address-field-label {
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: var(--eme-label-color);
+      padding: 10px 0;
+    }
+    #eme-solicit .address-field-label .field-label-is-required {
+      display: none;
+    }
+    #eme-solicit .social-media-group.alert-secondary {
+      background-color: transparent;
+      border-color: transparent;
+    }
+    #eme-solicit .social-media-group.alert {
+      padding: .75rem 0 0;
+    }
+    #eme-solicit .social-media-group h4,
+    #eme-solicit .legal-group h4 {
+      font-size: 1.1rem;
+    }
+    #eme-solicit .legal-group h4 {
+      margin-bottom: -15px;
+    }
+    #eme-solicit #ethnicity-anchor small {
+      display: inline-block;
+      line-height: 1.4;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+    #eme-solicit .optin-marketing-group small {
+      font-size: 0.9rem;
+      padding-top: 10px;
+      display: inline-block;
+      line-height: 1.7;
+    }
+    #eme-solicit .change-mind-label {
+      font-size: 0.8rem;
+      margin-top: -15px;
+      color: var(--eme-label-color);
+    }
+    #eme-solicit .form-check-label span,
+    #eme-solicit .form-radio-label span,
+    #eme-solicit #over-18-anchor span,
+    #eme-solicit #identity-true-anchor span,
+    #eme-solicit #agree-to-terms-anchor span,
+    #eme-solicit #agree-to-privacy-anchor span {
+      font-size: .9rem;
+      font-weight: 400;
+    }
+    #eme-solicit input[type="radio"],
+    #eme-solicit input[type="checkbox"] {
+      margin: 4px 6px 0 -1.5em !important;
+      float: left;
+      vertical-align: top;
+    }
+    #eme-solicit #agree-to-privacy-anchor small {
+      font-size: 0.8rem;
+      display: inline-block;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+    #eme-solicit .btn-primary {
+      margin-bottom: 15px;
+      border-color: var(--eme-button-background);
+      background: var(--eme-button-background);
+      text-shadow: none;
+    }
+    #eme-solicit .btn-primary:hover {
+      background: var(--eme-button-background-hover);
+      border-color: var(--eme-button-background-hover);
+    }
+    #eme-solicit .btn-primary.focus,
+    #eme-solicit .btn-primary:focus,
+    #eme-solicit .btn-primary:not(:disabled):not(.disabled).active:focus,
+    #eme-solicit .btn-primary:not(:disabled):not(.disabled):active:focus,
+    #eme-solicit .show > .btn-primary.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(202, 14, 205, .3);
+    }
+    #eme-solicit .solicit-disclaimer {
+      font-size: .8rem;
+      line-height: 1.4;
+    }
+    #eme-solicit .solicit-warning-fields {
+      font-size: .875rem;
+      font-weight: 700;
+    }
+    #eme-solicit .solicit-warning-heading {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--eme-alert-warning-color) !important;
+    }
+    #eme-solicit .solicit-warning-fields .text-muted {
+      color: var(--eme-invalid-color) !important;
+      font-weight: 400;
+    }
+    #eme-solicit .alert-warning .alert-link {
+      color: var(--eme-alert-warning-color) !important;
+    }
+    #eme-solicit .alert-warning .alert-link:hover {
+      text-decoration: underline;
+    }
+    #eme-solicit .form-check {
+      display: block;
+      min-height: 1.5rem;
+      padding-left: 1.5em;
+      margin-bottom: 0.125rem;
+    }
+    #eme-solicit .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: calc(var(--eme-form-control-column) * -1);
+      margin-left: calc(var(--eme-form-control-column) * -1);
+    }
+    #eme-solicit .flex-wrap {
+      flex-wrap: wrap!important;
+    }
+    #eme-solicit .input-group {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      width: 100%;
+    }
+    #eme-solicit .input-group>.form-control,
+    #eme-solicit .input-group>.form-select {
+      position: relative;
+      flex: 1 1 auto;
+      width: 1%;
+      min-width: 0;
+    }
+    #eme-solicit .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+    #eme-solicit .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    #eme-solicit .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+      margin-left: -1px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .header {
+      position: relative;
+      width: 100%;
+      background-image: url(assets/images/jennifer-hudson-show-mobile-v3.jpg);
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
+    @media (min-width: 768px) {
+      .header {
+        background-image: url(assets/images/jennifer-hudson-show-v3.jpg);
+        background-size: contain;
+      }
+    }
+    @media (min-width: 1025px) {
+      .header {
+        background-size: cover;
+      }
+    }
+    .hidden {
+      position: absolute;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 0;
+    }
+    .spacer {
+      display: block;
+      width: 100%;
+      padding-top: 155%;
+    }
+    @media (min-width: 768px) {
+      .spacer {
+        padding-top: 52.25%;
+      }
+    }
+    @media (min-width: 1025px) {
+      .spacer {
+        padding-top: 56.25%;
+      }
+    }
+    .eme-container {
+      margin-bottom: 2rem;
+      padding: 0 2rem;
+      max-width: 1260px;
+      color: #fff;
+    }
+    #eme-solicit .alert {
+      width: 100%;
+    }
+    .jh-header-newsletter {
+      position: relative;
+      margin-bottom: 0;
+      padding: 0 1.25rem 2rem 1.25rem;
+      color: #fff;
+      font-weight: 800;
+      line-height: 1.3;
+      font-size: calc(1rem + .3vw);
+    }
+    @media (min-width: 1025px) {
+      .jh-header-newsletter {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin-bottom: 0;
+        padding-bottom: 1%;
+        font-size: calc(1.275rem + .3vw);
+      }
+    }
+    @media (min-width: 1400px) {
+      .jh-header-newsletter {
+        padding-bottom: 2%;
+        font-size: 1.625rem;
+      }
+    }
+    .jh-header-newsletter span {
+      color: #f600b8;
+      text-transform: uppercase;
+    }
+    .solicit-submit-btn {
+      font-size: 0;
+    }
+    .solicit-submit-btn:before {
+      content: 'Submit';
+      font-size: 1.5rem;
+    }
+    #eme-solicit .text-danger.field-label-is-required {
+      font-size: 0;
+    }
+    #eme-solicit .text-danger.field-label-is-required:before {
+      color: var(--eme-link-color);
+      content: '(required)';
+      font-size: 1.25rem;
+    }
+    .affiliates-label span {
+      display: none;
+    }
+    .solicit-form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .form-control {
+      border-radius: 0;
+      border-width: 2px;
+      border-color: #efd79b;
+    }
+    .solicit-field-is-required-notice {
+      display: none;
+    }
+    .yes-no-field-label {
+      text-align: center;
+    }
+    .form-control-yes-no-field {
+      margin: 0 auto;
+      max-width: 35%;
+    }
+    @media (min-width: 768px) {
+      .form-control-yes-no-field {
+        max-width: 25%;
+      }
+    }
+    .affiliates-group {
+      display: none;
+    }
+    .affiliates-label {
+      max-width: 840px;
+    }
+    .first-name-group,
+    .last-name-group,
+    .email-group {
+      padding: 0;
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      .first-name-group,
+      .last-name-group,
+      .email-group {
+        padding: 0 1rem;
+        width: 33%;
+      }
+    }
+    .first-name-group span,
+    .last-name-group span,
+    .email-group span {
+      font-size: calc(1rem + .3vw);
+    }
+    @media (min-width: 768px) {
+      .first-name-group span,
+      .last-name-group span,
+      .email-group span {
+        font-size: 1.25rem;
+      }
+    }
+    .solicit-submit-btn {
+      margin-top: 1rem;
+    }
+    .solicit-disclaimer {
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
 <div class="header">
   <span class="hidden">Jennifer Hudson Coming to Daytime Fall 2022</span>
+  <div class="spacer"></div>
+  <h1 class="text-center jh-header-newsletter">Want to be the first to get info about Jennifer Hudson’s new show?<br/><span>Sign up below!</span></h1>
 </div>
+<!-- start: eme-solicit:2800:jenniferhudson:d3f4b1b7-484a-4711-b135-3c377afd7c1a -->
+<!-- Newsletter Sign Up -->
+<style>
+  /* optional styles */
+</style>
+<script src="https://assets.wbeme.com/collector-client/v0.1.js"></script>
+<div class="container eme-container">
+  <div id="eme-solicit"></div>
+</div>
+<script>
+  window.emeCollector.client
+          .setAssetsEndpoint('https://assets.wbeme.com/2800')
+          .setPbjxEndpoint('https://collector.wbeme.com/2800/pbjx')
+          .setAccountId('2800')
+          //.setTestMode(true)
+          .renderSolicit('eme-solicit', 'd3f4b1b7-484a-4711-b135-3c377afd7c1a');
+</script>
+<!-- end: eme-solicit:2800:jenniferhudson:d3f4b1b7-484a-4711-b135-3c377afd7c1a -->
 </body>
 </html>
