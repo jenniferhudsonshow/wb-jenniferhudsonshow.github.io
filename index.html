@@ -9,17 +9,17 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jenniferhudsonshow.com">
   <meta property="og:description" content="Two-time GRAMMY® Award-winning recording artist, Academy Award-winning actress, Emmy Award-winning producer, and best-selling author, Jennifer Hudson is now the newest voice in daytime talk!">
-  <meta property="og:image" content="assets/images/jennifer-hudson-1200x630-v3.jpg">
+  <meta property="og:image" content="assets/images/jennifer-hudson-1200x630-v4.jpg">
   <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-v2.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-v2.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16-v2.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-v4.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-v4.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16-v4.png">
   <link rel="manifest" href="/assets/site.webmanifest">
-  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#00000">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5e0b92">
   <link rel="shortcut icon" href="favicon.ico">
-  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileColor" content="#5e0b92">
   <meta name="msapplication-config" content="/assets/browserconfig.xml">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#5e0b92">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,20 +28,37 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <style>
+    @media (prefers-reduced-motion: no-preference) {
+      :root {
+        scroll-behavior: smooth;
+      }
+    }
     body {
       margin: 0;
       padding: 0;
-      -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      -webkit-font-feature-settings: 'kern' 1;
+      -moz-font-feature-settings: 'kern' 1;
       font-family: 'Montserrat', sans-serif;
       font-size: 1.1rem;
-      background: #000;
+      background: #460a83;
+    }
+
+    @media (min-width: 950px) {
+      body {
+        background-image: url(assets/images/jhud-bg-repeating.jpg);
+        background-position: center top;
+        background-repeat: repeat-x;
+      }
     }
 
     :root {
-      --eme-button-background: #f600b8;
+      --eme-button-background: #e81a77;
       --eme-button-background-hover: #d5009e;
-      --eme-link-color: #f600b8;
+      --eme-link-color: #e81a77;
       --eme-label-color: #464a4e;
       --eme-form-control-column: 10px;
       --eme-valid-border-color: #198754;
@@ -240,20 +257,20 @@
     .header {
       position: relative;
       width: 100%;
-      background-image: url(assets/images/jennifer-hudson-show-mobile-v3.jpg);
-      background-size: cover;
+      background-image: url(assets/images/jhud-bg-smartphone.jpg);
+      background-size: contain;
       background-position: center top;
       background-repeat: no-repeat;
     }
     @media (min-width: 768px) {
       .header {
-        background-image: url(assets/images/jennifer-hudson-show-v3.jpg);
-        background-size: contain;
+        background-image: url(assets/images/jhud-bg-desktop.jpg);
       }
     }
-    @media (min-width: 1025px) {
+    @media (min-width: 950px) {
       .header {
-        background-size: cover;
+        width: 950px;
+        margin: 0 auto;
       }
     }
     .hidden {
@@ -266,22 +283,17 @@
     .spacer {
       display: block;
       width: 100%;
-      padding-top: 155%;
+      padding-top: 95.64%;
     }
     @media (min-width: 768px) {
       .spacer {
-        padding-top: 52.25%;
-      }
-    }
-    @media (min-width: 1025px) {
-      .spacer {
-        padding-top: 56.25%;
+        padding-top: 76.82%;
       }
     }
     .eme-container {
       margin-bottom: 2rem;
       padding: 0 2rem;
-      max-width: 1260px;
+      max-width: 1200px;
       color: #fff;
     }
     #eme-solicit .alert {
@@ -296,25 +308,31 @@
       line-height: 1.3;
       font-size: calc(1rem + .3vw);
     }
-    @media (min-width: 1025px) {
+    @media (min-width: 768px) {
       .jh-header-newsletter {
         position: absolute;
         bottom: 0;
         right: 0;
         left: 0;
         margin-bottom: 0;
-        padding-bottom: 1%;
-        font-size: calc(1.275rem + .3vw);
+        padding: 0 1rem;
+        font-size: 20px;
+        line-height: 1.5;
       }
     }
-    @media (min-width: 1400px) {
+    @media (min-width: 880px) {
       .jh-header-newsletter {
-        padding-bottom: 2%;
-        font-size: 1.625rem;
+        font-size: 23px;
+      }
+    }
+    @media (min-width: 980px) {
+      .jh-header-newsletter {
+        padding: 0;
+        font-size: 26px;
       }
     }
     .jh-header-newsletter span {
-      color: #f600b8;
+      color: var(--eme-link-color);
       text-transform: uppercase;
     }
     .solicit-submit-btn {
@@ -340,6 +358,17 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      padding-top: 0;
+    }
+    @media (min-width: 768px) {
+      .solicit-form {
+        padding-top: 1.5rem;
+      }
+    }
+    @media (min-width: 980px) {
+      .solicit-form {
+        padding-top: 1.75rem;
+      }
     }
     .form-control {
       border-radius: 0;
@@ -377,7 +406,7 @@
       .first-name-group,
       .last-name-group,
       .email-group {
-        padding: 0 1rem;
+        padding: 0 .75rem;
         width: 33%;
       }
     }
@@ -391,6 +420,13 @@
       .first-name-group span,
       .last-name-group span,
       .email-group span {
+        font-size: 1.125rem;
+      }
+    }
+    @media (min-width: 880px) {
+      .first-name-group span,
+      .last-name-group span,
+      .email-group span {
         font-size: 1.25rem;
       }
     }
@@ -399,6 +435,8 @@
     }
     .solicit-disclaimer {
       text-align: center;
+      opacity: .6;
+      color: #fff !important;
     }
   </style>
 </head>
@@ -411,9 +449,6 @@
 </div>
 <!-- start: eme-solicit:2800:jenniferhudson:d3f4b1b7-484a-4711-b135-3c377afd7c1a -->
 <!-- Newsletter Sign Up -->
-<style>
-  /* optional styles */
-</style>
 <script src="https://assets.wbeme.com/collector-client/v0.1.js"></script>
 <div class="container eme-container">
   <div id="eme-solicit"></div>
