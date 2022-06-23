@@ -411,21 +411,24 @@
     }
     .first-name-group span,
     .last-name-group span,
-    .email-group span {
-      font-size: calc(1rem + .3vw);
+    .email-group span,
+    #eme-solicit .text-danger.field-label-is-required:before {
+      font-size: calc(.9rem + .3vw);
       font-weight: 600;
     }
     @media (min-width: 768px) {
       .first-name-group span,
       .last-name-group span,
-      .email-group span {
+      .email-group span,
+      #eme-solicit .text-danger.field-label-is-required:before {
         font-size: 1.125rem;
       }
     }
     @media (min-width: 880px) {
       .first-name-group span,
       .last-name-group span,
-      .email-group span {
+      .email-group span,
+      #eme-solicit .text-danger.field-label-is-required:before {
         font-size: 1.25rem;
       }
     }
