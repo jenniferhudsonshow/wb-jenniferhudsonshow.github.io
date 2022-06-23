@@ -49,7 +49,7 @@
 
     @media (min-width: 950px) {
       body {
-        background-image: url(assets/images/jhud-bg-repeating.jpg);
+        background-image: url(assets/images/jhud-bg-repeating-v2.jpg);
         background-position: center top;
         background-repeat: repeat-x;
       }
@@ -257,14 +257,14 @@
     .header {
       position: relative;
       width: 100%;
-      background-image: url(assets/images/jhud-bg-smartphone.jpg);
+      background-image: url(assets/images/jhud-bg-smartphone-v2.jpg);
       background-size: contain;
       background-position: center top;
       background-repeat: no-repeat;
     }
     @media (min-width: 768px) {
       .header {
-        background-image: url(assets/images/jhud-bg-desktop.jpg);
+        background-image: url(assets/images/jhud-bg-desktop-v2.jpg);
       }
     }
     @media (min-width: 950px) {
@@ -438,7 +438,7 @@
       color: #fff !important;
     }
     .video-container {
-      margin-top: -2.25rem;
+      margin-top: -23%;
       margin-bottom: 1.5rem;
       padding: 0 1rem;
       max-width: 880px;
@@ -449,7 +449,7 @@
     }
     @media (min-width: 768px) {
       .video-container {
-        margin-top: -4rem;
+        margin-top: -9rem;
         margin-bottom: 2rem;
         max-width: 970px;
         padding: 0 2rem;
@@ -460,13 +460,18 @@
     }
     @media (min-width: 880px) {
       .video-container {
-        margin-top: -5rem;
-        max-width: 1030px;
+        margin-top: -10rem;
+        max-width: 1044px;
       }
     }
-
+    .youtube-thumbnail {
+      cursor: pointer;
+    }
   </style>
+
+
 </head>
+
 
 <body>
 <div class="header">
@@ -476,7 +481,7 @@
 
 <div class="container video-container">
   <div class="embed-responsive embed-responsive-16by9 video-embed">
-    <iframe class="embed-responsive-item" width="1280" height="720" src="//www.youtube-nocookie.com/embed/ZMPpLofgSTM?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=1&hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img class="embed-responsive-item youtube-thumbnail" src="assets/images/video-thumbnail-v2.jpg" data-video="//www.youtube.com/embed/ZMPpLofgSTM?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=1&hd=1&autoplay=1">
   </div>
 </div>
 
@@ -496,5 +501,13 @@
           .renderSolicit('eme-solicit', 'd3f4b1b7-484a-4711-b135-3c377afd7c1a');
 </script>
 <!-- end: eme-solicit:2800:jenniferhudson:d3f4b1b7-484a-4711-b135-3c377afd7c1a -->
+
+<script src="assets/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  $('.youtube-thumbnail').click(function(){
+    video = '<iframe class="embed-responsive-item" width="1280" height="720" src="'+ $(this).attr('data-video') +'" title="Jennifer Hudson Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    $(this).replaceWith(video);
+  });
+</script>
 </body>
 </html>
